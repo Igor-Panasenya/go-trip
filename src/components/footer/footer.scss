@@ -1,0 +1,110 @@
+.footer {
+  margin-bottom: 74px;
+
+  .navbar {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 54px;
+
+    a {
+      color: #0F1F1C;
+      opacity: 0.5;
+      transition: var(--transition);
+
+      &:hover,
+      &.active {
+        opacity: 1;
+      }
+    }
+    .logo {
+      color: rgba(255, 124, 78, 1);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+
+      a {
+        color: inherit;
+        opacity: 1;
+      }
+    }
+    .nav-menu {
+      display: flex;
+      flex-direction: row;
+      column-gap: 80px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+    }
+    .nav-login {
+      display: flex;
+      flex-direction: row;
+      column-gap: 25px;
+
+      .btn {
+        background: transparent;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: rgba(131, 139, 137, 1);
+        transition: var(--transition);
+
+        &:hover {
+          color: #f1dc7a;
+        }
+
+        &:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+
+      .btnLogin {
+        color: #fff;
+        background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+        border-radius: 100px;
+        padding: 13px 44px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    margin-bottom: 74px;
+    .navbar {
+      flex-direction: column;
+      .nav-logo {
+        .logo {
+          font-size: 40px;
+          line-height: 120%;
+        }
+      }
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin: 50px 0 55px 0;
+
+        a {
+          color: #0F1F1C;
+          opacity: 0.5;
+          transition: var(--transition);
+
+          &:hover,
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+      .nav-login {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  }
+}

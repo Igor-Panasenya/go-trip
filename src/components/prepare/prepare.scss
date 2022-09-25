@@ -1,0 +1,125 @@
+.prepare {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 250px;
+  background-color: #fff;
+  border-radius: 60px;
+  padding: 115px 0;
+
+  .prepare-title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 68px;
+    text-align: center;
+  }
+  .prepare-text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .btn-main {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FEFEFE;
+    padding: 25px 45px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px;
+    transition: var(--transition);
+    margin: 0 auto;
+
+    &:hover {
+      color: #f1dc7a;
+    }
+
+    &:active {
+      position: relative;
+      top: 1px;
+    }
+
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 56px;
+    left: 74px;
+    width: 63px;
+    height: 83px;
+    background-image: url('../../../public/img/prepare/before.png');
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 74px;
+    right: 80px;
+    width: 63px;
+    height: 83px;
+    background-image: url('../../../public/img/prepare/after.png');
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .prepare {
+    margin: 100px auto;
+    padding: 50px 30px;
+    width: 90%;
+
+    .prepare-title {
+      font-size: 30px;
+      line-height: 120%;
+    }
+    .prepare-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
+    .btn-main {
+      position: relative;
+      font-size: 14px;
+      line-height: 120%;
+      padding: 10px 26px;
+      border-radius: 10px;
+
+      z-index: 1;
+
+      &:hover {
+        color: #f1dc7a;
+      }
+
+      &:active {
+        position: relative;
+        top: 1px;
+      }
+
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      width: 63px;
+      height: 83px;
+      background-image: url('../../../public/img/prepare/before.png');
+
+      z-index: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      width: 63px;
+      height: 83px;
+      background-image: url('../../../public/img/prepare/after.png');
+    }
+  }
+}
